@@ -1,0 +1,83 @@
+.footer-page {
+  @include centeredFlex(flex, center, center);
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
+}
+
+.subscription-box {
+  margin-left: 70px;
+}
+.address {
+  margin-top: 20px;
+}
+
+.address__link {
+  @extend %address;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__text {
+  @extend %address;
+  color: $text-white;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.subscription-box {
+  margin-left: 70px;
+}
+.subscription-box__subtitle {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $text-white;
+}
+
+.subscription-form {
+  margin-left: 93px;
+}
+.subscription-form__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-white;
+}
+
+.footer-form {
+  @include centeredFlex(flex, center, center);
+  margin-top: 20px;
+}
+
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 12px;
+  display: inline-block;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,19 @@
+.container {
+  min-width: 480px;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  &--footer-flex {
+    display: flex;
+    align-items: baseline;
+  }
+  &--flex {
+    @include centeredFlex(flex, center, center);
+    // display: flex;
+    // align-items: center;
+  }
+}

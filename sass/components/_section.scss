@@ -1,0 +1,35 @@
+.section {
+  min-width: 480px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  @media screen and(min-width: 768px) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  &--team-bg-color {
+    background: $secondary-color;
+  }
+  &--no-pad-top {
+    padding-top: 0;
+
+    @media screen and(max-width: 1199px) {
+      display: none;
+    }
+  }
+}
+.section__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: $text-secondary;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
