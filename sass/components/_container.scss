@@ -1,5 +1,5 @@
 .container {
-  min-width: 480px;
+  // min-width: 480px;
   // max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -18,13 +18,16 @@
   }
 
   &--footer-flex {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
-
   &--flex {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     @media screen and (min-width: 768px) {
       @include centeredFlex(flex, center, center);
     }

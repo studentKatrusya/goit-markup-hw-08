@@ -1,5 +1,6 @@
 .card-set {
   /* outline: 1px solid tomato; */
+
   @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -62,7 +63,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: $text-secondary;
   margin-bottom: 4px;
 }
