@@ -19,11 +19,15 @@
 
 .hero-page__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6;
   color: $text-white;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  // margin-bottom: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }

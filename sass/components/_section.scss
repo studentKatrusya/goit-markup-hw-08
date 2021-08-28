@@ -6,8 +6,8 @@
   padding-top: 64px;
   padding-bottom: 64px;
   @media screen and(min-width: 768px) {
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   @media screen and(min-width: 1200px) {
     padding-top: 94px;
@@ -25,11 +25,16 @@
   }
 }
 .section__heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  margin-bottom: 30px;
   color: $text-secondary;
-  letter-spacing: 0.03em;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
-  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }

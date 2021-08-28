@@ -8,12 +8,17 @@
     display: none;
   }
 }
+
 @media screen and(min-width: 1200px) {
   .contacts__item + .contacts__item {
     margin-left: 50px;
   }
 }
-
+.contacts__item:first-child {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+}
 .contacts__link {
   @media screen and(min-width: 1200px) {
     @include centeredFlex(flex, center, center);
