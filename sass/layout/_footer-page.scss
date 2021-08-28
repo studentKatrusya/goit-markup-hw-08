@@ -8,12 +8,11 @@
   background: #2f303a;
 }
 .address-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // @media screen and (max-width: 767px) {
-
-  // }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   @media screen and (max-width: 1199px) {
     padding-bottom: 60px;
@@ -75,11 +74,12 @@
     margin-top: 60px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 166px;
     display: flex;
     flex-direction: column;
   }
+
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
@@ -98,9 +98,12 @@
   text-align: center;
   margin-top: 20px;
   @media screen and(min-width: 768px) and(max-width: 1199px) {
-    @include centeredFlex(flex, center, center);
     display: flex;
+    align-items: center;
     flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    @include centeredFlex(flex, center, center);
   }
 }
 
