@@ -415,6 +415,9 @@ img {
   }
 }
 
+.feature__item {
+  text-align: center;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature__item {
     width: calc((100% - 30px) / 2);
@@ -502,13 +505,6 @@ img {
   color: #ffffff;
 }
 
-.team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
 @media screen and (min-width: 1200px) {
   .team {
     display: -webkit-box;
