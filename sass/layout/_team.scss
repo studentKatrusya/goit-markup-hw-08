@@ -7,6 +7,7 @@
 }
 
 .team__item {
+  width: 100%;
   text-align: center;
   background: $secondary-color;
   &:not(:last-child) {
@@ -16,12 +17,12 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100%-30px * 2) / 2);
+    flex-basis: calc((100% - 30px * 2) / 2);
     margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100%-30px * 3) / 4);
+    flex-basis: calc((100% - 30px * 3) / 4);
   }
 }
 

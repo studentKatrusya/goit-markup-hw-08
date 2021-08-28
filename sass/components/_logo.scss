@@ -10,18 +10,17 @@
   color: $accent-color;
   text-decoration: none;
   letter-spacing: 0.03em;
-  @media (max-width: 767px) {
+
+  @media screen and(max-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  &--header-mg {
     margin-left: 16px;
     margin-top: 16px;
-    @media screen and(max-width: 1200px) {
-      font-size: 26px;
-      line-height: 1.2;
-    }
-    // &--header-mg {
-
-    //   }
   }
 }
+
 .header-page__logo {
   color: #000;
 }

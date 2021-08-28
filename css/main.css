@@ -151,17 +151,15 @@ img {
   text-decoration: none;
   letter-spacing: 0.03em;
 }
-@media (max-width: 767px) {
-  .logo {
-    margin-left: 16px;
-    margin-top: 16px;
-  }
-}
-@media screen and (max-width: 767px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.2;
   }
+}
+.logo--header-mg {
+  margin-left: 16px;
+  margin-top: 16px;
 }
 
 .header-page__logo {
@@ -512,6 +510,7 @@ img {
 }
 
 .team__item {
+  width: 100%;
   text-align: center;
   background: #f5f4fa;
 }
@@ -522,15 +521,15 @@ img {
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    -ms-flex-preferred-size: calc((100%-30px * 2) / 2);
-        flex-basis: calc((100%-30px * 2) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px * 2) / 2);
+        flex-basis: calc((100% - 30px * 2) / 2);
     margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    -ms-flex-preferred-size: calc((100%-30px * 3) / 4);
-        flex-basis: calc((100%-30px * 3) / 4);
+    -ms-flex-preferred-size: calc((100% - 30px * 3) / 4);
+        flex-basis: calc((100% - 30px * 3) / 4);
   }
 }
 
@@ -712,14 +711,26 @@ img {
   background: #2f303a;
 }
 
+.address-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media screen and (max-width: 1199px) {
-  .address__box {
+  .address-box {
     padding-bottom: 60px;
     text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
-  .address__box {
+  .address-box {
     margin-right: 70px;
   }
 }
@@ -874,7 +885,7 @@ img {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   padding: 40px;
   width: 450px;
@@ -1250,7 +1261,14 @@ img {
 
 .card-set__link {
   text-decoration: none;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1276,6 +1294,9 @@ img {
 }
 
 .card-set__meta {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
