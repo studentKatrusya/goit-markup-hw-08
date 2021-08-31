@@ -1,8 +1,9 @@
 .network {
   @include centeredFlex(flex, center, center);
   // display: flex;
-  // align-items: center;
+  
   // justify-content: center;
+  // align-items: center;
   margin-top: 16px;
 }
 .network__item {
