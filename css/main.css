@@ -122,9 +122,8 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container--footer-flex {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -834,7 +833,6 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscription-form {
-    margin-left: 166px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
